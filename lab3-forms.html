@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Order Coffee</title>
+	<meta name="viewport" content="width=device-width">
+	<style>
+		ul {
+		  list-style-type: none;
+		}
+	</style>
+  </head>
+  <body>
+    <h1>Coffee Order Form</h1>
+	<form action="https://www.w3schools.com/action_page.php" method="get">
+	<section>
+		<h3>Customer Information</h3>
+		<h6>Required fields are denoted by *</h6>
+		<p>
+		  <label for="name">Customer Name<span aria-label="required">*</span></label>
+		  <input type="text" id="name" name="customer_name" />
+		  <!--Input field: Use a single-line text input.-->
+		</p>
+		<p>
+		  <label for="mail">Email Address<span aria-label="required">*</span></label>
+		  <input type="email" id="mail" name="email_address" />
+		  <!--Input field: Use an email input field to ensure proper email validation.-->
+		</p>
+	</section>
+	<section>
+		<h3>Order Information</h3>
+		<p>
+		  <fieldset>
+		    <legend>Select Coffee</legend>
+			  <label for="coffee"><span></span></label>
+				<select id="coffee" name="coffee">
+				  <option value="latte">Latte</option>
+				  <option value="cappucino">Cappuccino</option>
+				  <option value="americano">Americano</option>
+				  <option value="espresso">Expresso</option>
+				</select>
+		      <!--Control: Use a dropdown menu with options for different coffee types (e.g., Latte, Cappuccino, Americano, Espresso).-->
+		  </fieldset>
+		</p>
+		<p>
+		  <fieldset>
+			<legend>Select Size</legend>
+			<ul>
+			  <li>
+				   <input type="radio" name="size" id="size_1" value="small" />
+				   <label for="size_1">Small</label>
+			  </li>
+			  <li>
+				   <input type="radio" name="size" id="size_2" value="medium" />
+				   <label for="size_2">Medium</label>
+			  </li>
+			  <li>
+				   <input type="radio" name="size" id="size_3" value="large" />
+				   <label for="size_3">Large</label>
+			  </li>
+				<!--Control: Use radio buttons for size selection. Options should include Small, Medium, and Large.-->
+			</ul>
+		  </fieldset>
+		</p>
+		<p>
+		  <fieldset>
+			  <legend>Select Extras</legend>
+			  <ul>
+				<li>
+				  <input type="checkbox" id="whippedcream" name="extras" value="whippedcream" />
+				  <label for="whippedcream">Whipped Cream</label>
+				</li>
+				<li>
+				  <input type="checkbox" id="extrashot" name="extras" value="extrashot" />
+				  <label for="extrashot">Extra Shot</label>
+				</li>
+				<li>
+				  <input type="checkbox" id="almondmilk" name="extras" value="almondmilk" />
+				  <label for="almondmilk">Almond Milk</label>
+				</li>
+			  </ul>
+			</fieldset>
+		  <!--Control: Use checkboxes to allow multiple selections. Include options like: Whipped Cream, Extra Shot, Almond Milk-->
+		</p>
+		<p>
+		  <label for="msg">Comments or Requests</label>
+		    <p>
+		      <textarea id="msg" name="comments_requests" rows="5" cols="50">Enter comments or requests here</textarea>
+			</p>
+		  <!--Control: Use a multiline text area for additional comments or instructions.-->
+		</p>
+	</section>
+	<p class="button">
+	  <button type="submit">Submit Order</button>
+	  <!--Control: Use a button to submit the form.-->
+	</p>
+	</form>
+	</p>
+  </body>
+</html>
