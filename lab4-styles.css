@@ -1,0 +1,41 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+body {
+  background-color: lightyellow; 
+  font-family: Arial, sans-serif;
+}
+
+p {
+  color: purple;
+  padding: 10px;
+}
+
+ul li::marker {
+  color: green; 
+}
+
+ul li {
+  color: red; 
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.styled-box {
+  border: 5px solid black;
+  padding: 15px;
+  background-color: lightgray;
+  text-align: center;
+}
